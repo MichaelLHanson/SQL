@@ -1,0 +1,22 @@
+Created a database for the different sizes abd brands of tires
+
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, size INTEGER, my_cost INTEGER, sell_cost INTEGER);
+INSERT INTO store VALUES(1, "firestone", 18, 100, 200);
+INSERT INTO store VALUES(2, "cooper", 17, 75, 125);
+INSERT INTO store VALUES(3, "firestone", 17, 85, 135);
+INSERT INTO store VALUES(4, "cooper", 18, 115, 225);
+INSERT INTO store VALUES(5, "goodyear", 17, 125, 250);
+INSERT INTO store VALUES(6, "goodyear", 18, 135, 265);
+INSERT INTO store VALUES(7, "cooper", 20, 125, 200);
+INSERT INTO store VALUES(8, "cooper", 22, 135, 225);
+INSERT INTO store VALUES(9, "firestone", 20, 150, 250);
+INSERT INTO store VALUES(10, "firestone", 22, 175, 275);
+INSERT INTO store VALUES(11, "goodyear", 20 , 155, 255);
+INSERT INTO store VALUES(12, "goodyear", 22, 175, 275);
+INSERT INTO store VALUES(13, "pirelli", 18, 200, 300);
+INSERT INTO store VALUES(14, "pireeli", 20, 250, 350);
+INSERT INTO store VALUES(15, "pirelli", 22, 300, 400);
+
+SELECT * FROM store ORDER BY sell_cost DESC;
+SELECT MAX(my_cost) FROM store
+
